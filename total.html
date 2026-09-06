@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Total des dépenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <a href="index.html">⬅ Retour au calculateur</a>
+        <h2>Récapitulatif</h2>
+
+        <!-- Affichage du total -->
+        <div class="total-box">
+            <h3>Total cumulé :</h3>
+            <p id="totalMontant">0 €</p>
+        </div>
+
+        <!-- Tableau des dépenses -->
+        <table id="tableauDepenses">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+            <tbody id="corpsTableau">
+                <!-- Les lignes s'ajouteront ici automatiquement -->
+            </tbody>
+        </table>
+    </div>
+    <div class="admin-section">
+    <button id="adminBtn" onclick="resetAdmin()">Mode Admin (Reset)</button>
+    <p id="adminMessage"></p>
+</div>
+
+    <script src="total.js"></script>
+</body>
+</html>
